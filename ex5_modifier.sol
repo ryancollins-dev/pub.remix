@@ -9,6 +9,9 @@ contract MyContract {
     uint public myVarTwo;
     bool writeable;
 
+    modifier  mustBeWriteable() {
+        _;
+    }
     function setWriteable(bool _writeable) public {
         writeable = _writeable;
     }
