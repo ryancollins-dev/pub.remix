@@ -2,7 +2,7 @@
 // 2022-09-13
 // @ryd3v
 
-pragma solidity ^0.8.6;
+pragma solidity >=0.7.0 <0.9.0;
 
 // Datatypes
 contract Notary {
