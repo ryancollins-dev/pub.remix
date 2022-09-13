@@ -3,3 +3,4 @@
 *.pem
 artifacts/
 /node_modules/
+contracts/scenario.json
