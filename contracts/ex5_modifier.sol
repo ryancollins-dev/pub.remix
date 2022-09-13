@@ -18,11 +18,11 @@ contract MyContract {
     writeable = _writeable;
   }
 
-  function updateMyVarOne(uint256 _myVar) public {
+  function updateMyVarOne(uint256 _myVar) public mustBeWriteable {
     myVarOne = _myVar;
   }
 
-  function updateMyVarTwo(uint256 _myVar) public {
+  function updateMyVarTwo(uint256 _myVar) public mustBeWriteable {
     myVarTwo = _myVar;
   }
 }

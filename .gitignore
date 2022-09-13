@@ -1,5 +1,5 @@
 # misc
 .DS_Store
 *.pem
-/artifacts/
+artifacts/
 /node_modules/
