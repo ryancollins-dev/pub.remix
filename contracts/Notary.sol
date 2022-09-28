@@ -35,4 +35,23 @@ contract Notary {
     myMapping[_checksum].comments = _comments;
     myMapping[_checksum].setBy = msg.sender;
   }
+
+  function entrySet(bytes32 _checksum)
+    public
+    view
+    returns (
+      string memory fileName,
+      uint256,
+      string memory comments,
+      address
+    )
+  {
+    require(myMapping[_checksum].isSet);
+    return (
+      myMapping[_checksum].fileName,
+      myMapping[_checksum].timestamp,
+      myMapping[_checksum].comments,
+      myMapping[_checksum].setBy
+    );
+  }
 }
