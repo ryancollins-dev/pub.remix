@@ -4,3 +4,5 @@
 artifacts/
 /node_modules/
 contracts/scenario.json
+.deps/remix-tests/remix_accounts.sol
+.deps/remix-tests/remix_tests.sol
