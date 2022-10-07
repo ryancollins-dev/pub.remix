@@ -2,7 +2,7 @@
 // 2022-10-06
 // @ryd3v.eth
 
-pragma solidity >=0.7.0 <0.9.0;
+pragma solidity ^0.8.8;
 
 contract SimpleStorage {
   uint256 favoriteNumber;
